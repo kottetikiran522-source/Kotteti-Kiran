@@ -37,7 +37,7 @@ def create_tables():
 # Home page with login options
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return "<h1>Welcome to Smart Attendance</h1><p><a href='/student/login'>Student Login</a> | <a href='/register'>Register</a> | <a href='/teacher/login'>Teacher Login</a></p>"
 # Student Login
 @app.route('/student/login', methods=['GET', 'POST'])
 def login():
